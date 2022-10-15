@@ -1,0 +1,432 @@
+@font-face {
+  font-family: Nagitta;
+  src: url("../fonts/Nagitta-Regular.ttf");
+}
+/* line 9, ../scss/style.scss */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+/* line 15, ../scss/style.scss */
+body {
+  font-family: 'Open Sans', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background: #000000;
+}
+
+/* line 22, ../scss/style.scss */
+::-webkit-scrollbar {
+  width: .25rem;
+  height: .25rem;
+}
+
+/* line 27, ../scss/style.scss */
+::-webkit-scrollbar-track {
+  box-shadow: none;
+  background: transparent;
+}
+
+/* line 32, ../scss/style.scss */
+::-webkit-scrollbar-thumb {
+  background-color: #335cff;
+  outline: none;
+}
+
+/* line 37, ../scss/style.scss */
+.pad {
+  padding-top: 5px !important;
+}
+
+/* line 42, ../scss/style.scss */
+.section-title {
+  display: flex;
+}
+/* line 45, ../scss/style.scss */
+.section-title h1 {
+  margin-right: auto;
+  margin-left: auto;
+  font-weight: 800;
+  letter-spacing: 5px;
+  border-bottom: 3px solid #335cff;
+  font-size: 2rem;
+}
+
+/* line 55, ../scss/style.scss */
+.text-center {
+  text-align: center;
+}
+
+/* line 59, ../scss/style.scss */
+.fy-button {
+  padding: 1.5rem 2rem;
+  letter-spacing: 5px;
+  text-decoration: none;
+  font-size: 1.5rem;
+  font-weight: bold;
+  transition: all 0.2s ease-in;
+}
+
+/* line 68, ../scss/style.scss */
+.fy-container {
+  width: 1500px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+/* line 74, ../scss/style.scss */
+.fy-button:hover {
+  cursor: pointer;
+}
+
+/* line 78, ../scss/style.scss */
+.fy-text {
+  letter-spacing: 1px;
+}
+
+/* line 82, ../scss/style.scss */
+.fy-flex, .fy-flex-center {
+  display: flex;
+}
+
+/* line 87, ../scss/style.scss */
+.fy-flex-center > * {
+  margin: auto;
+}
+
+/* line 92, ../scss/style.scss */
+.fy-flex-inline {
+  display: inline-flex;
+  flex-wrap: wrap;
+  width: 100%;
+  justify-content: center;
+}
+
+/* line 99, ../scss/style.scss */
+.fy-horizontal-scroll {
+  width: 100%;
+  overflow: hidden;
+  overflow-x: auto;
+}
+/* line 104, ../scss/style.scss */
+.fy-horizontal-scroll > div {
+  display: inline-flex;
+}
+
+/* line 109, ../scss/style.scss */
+#flip {
+  height: 5vh;
+  overflow: hidden;
+}
+/* line 113, ../scss/style.scss */
+#flip #flip-items {
+  position: relative;
+  animation: show 10s linear infinite;
+}
+/* line 117, ../scss/style.scss */
+#flip #flip-items .flip-item {
+  height: 5vh;
+  display: flex;
+  align-items: center;
+}
+/* line 122, ../scss/style.scss */
+#flip #flip-items .flip-item p {
+  margin: 0;
+  color: #9c9c9c;
+}
+
+@keyframes show {
+  0% {
+    top: 0;
+  }
+  17.55% {
+    top: 0;
+  }
+  20% {
+    top: -5vh;
+  }
+  37.5% {
+    top: -5vh;
+  }
+  40% {
+    top: -10vh;
+  }
+  57.5% {
+    top: -10vh;
+  }
+  60% {
+    top: -5vh;
+  }
+  77.5% {
+    top: -5vh;
+  }
+  80% {
+    top: 0;
+  }
+}
+/* line 143, ../scss/style.scss */
+nav {
+  display: flex;
+  width: 100%;
+  padding: 0 50px;
+  z-index: 1;
+  min-height: 10vh;
+  background: #000000;
+}
+/* line 151, ../scss/style.scss */
+nav .nav-right {
+  margin-left: auto;
+}
+/* line 155, ../scss/style.scss */
+nav .nav-center {
+  margin-right: auto;
+  margin-left: auto;
+}
+/* line 160, ../scss/style.scss */
+nav .nav-items {
+  display: flex;
+}
+/* line 163, ../scss/style.scss */
+nav .nav-items li {
+  display: flex;
+}
+/* line 165, ../scss/style.scss */
+nav .nav-items li .nav-item {
+  color: #c3c3c3;
+  font-weight: bold;
+  border-bottom: 3px solid transparent;
+  text-decoration: none;
+  letter-spacing: 1px;
+  margin: auto;
+  padding: 1rem 1.2rem;
+  text-transform: uppercase;
+  transition: all 0.2s ease-in;
+}
+/* line 177, ../scss/style.scss */
+nav .nav-items li .nav-item:hover {
+  color: #ffffff;
+  border-bottom-color: #335cff;
+}
+/* line 184, ../scss/style.scss */
+nav #nav-icon {
+  color: #335cff;
+}
+
+/* line 189, ../scss/style.scss */
+#top-nav-bar {
+  position: sticky;
+  top: 0;
+}
+
+/* line 194, ../scss/style.scss */
+#intro {
+  background: transparent;
+  color: #ffffff;
+}
+/* line 198, ../scss/style.scss */
+#intro .greeting {
+  font-size: 2rem;
+}
+/* line 199, ../scss/style.scss */
+#intro .title {
+  font-size: 8.5rem;
+}
+/* line 200, ../scss/style.scss */
+#intro .fy-flex-center {
+  min-height: 80vh;
+}
+/* line 202, ../scss/style.scss */
+#intro .career-txt {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2rem;
+  letter-spacing: 5px;
+  font-weight: bold;
+}
+/* line 210, ../scss/style.scss */
+#intro .career-txt .flip-item {
+  text-align: left;
+}
+/* line 211, ../scss/style.scss */
+#intro .career-txt #i-am {
+  margin-right: 1rem;
+}
+/* line 214, ../scss/style.scss */
+#intro #intro-links {
+  margin-top: 4rem;
+  display: flex;
+  justify-content: center;
+}
+/* line 219, ../scss/style.scss */
+#intro #intro-links .one {
+  background-color: #335cff;
+  color: #fff;
+  margin-right: 20px;
+  outline: 1px solid #335cff;
+}
+/* line 225, ../scss/style.scss */
+#intro #intro-links .one:hover {
+  background-color: #000000;
+  color: #ffffff;
+  transition: all 0.2s ease-in;
+}
+/* line 231, ../scss/style.scss */
+#intro #intro-links .two {
+  color: #ffffff;
+  outline: 1px solid #335cff;
+}
+/* line 236, ../scss/style.scss */
+#intro #intro-links .two:hover {
+  color: #fff;
+  background: #335cff;
+  outline-color: #335cff;
+  transition: all 0.2s ease-in;
+}
+/* line 243, ../scss/style.scss */
+#intro #intro-links .one-cover {
+  margin-left: auto;
+}
+/* line 244, ../scss/style.scss */
+#intro #intro-links .two-cover {
+  margin-right: auto;
+}
+
+/* line 249, ../scss/style.scss */
+#works {
+  z-index: 2;
+  color: #ffffff;
+  background: #0e0e0e;
+}
+/* line 254, ../scss/style.scss */
+#works .works {
+  margin-top: 2rem;
+}
+/* line 256, ../scss/style.scss */
+#works .works .work {
+  margin: 1rem;
+  width: 20rem;
+}
+/* line 259, ../scss/style.scss */
+#works .works .work .details {
+  margin: 1rem;
+}
+/* line 261, ../scss/style.scss */
+#works .works .work .details .title {
+  font-size: 1.4rem;
+}
+/* line 264, ../scss/style.scss */
+#works .works .work .details .summary, #works .works .work .details .title {
+  margin-top: 1rem;
+}
+/* line 267, ../scss/style.scss */
+#works .works .work .details .summary {
+  color: #9c9c9c;
+}
+/* line 271, ../scss/style.scss */
+#works .works .work .image {
+  width: 100%;
+  border-radius: 0.5rem;
+}
+
+/* line 280, ../scss/style.scss */
+#services {
+  color: #ffffff;
+}
+/* line 283, ../scss/style.scss */
+#services .services {
+  justify-content: center;
+  margin-top: 2rem;
+}
+/* line 287, ../scss/style.scss */
+#services .services .service {
+  width: 25rem;
+  padding: 1rem;
+}
+/* line 291, ../scss/style.scss */
+#services .services .service .image {
+  margin: 1rem 0;
+}
+/* line 294, ../scss/style.scss */
+#services .services .service .title, #services .services .service .description {
+  margin-top: .5rem;
+}
+/* line 297, ../scss/style.scss */
+#services .services .service .description {
+  color: #9c9c9c;
+}
+
+/* line 305, ../scss/style.scss */
+.contact {
+  color: #ffffff;
+  background: #0e0e0e !important;
+}
+/* line 309, ../scss/style.scss */
+.contact .fy-flex {
+  margin: 4rem 1rem;
+  justify-content: space-evenly;
+  align-items: center;
+}
+/* line 314, ../scss/style.scss */
+.contact .fy-flex h1 {
+  font-weight: 900;
+  font-size: 4rem;
+}
+/* line 320, ../scss/style.scss */
+.contact .fy-button {
+  background-color: #335cff;
+  color: #ffffff;
+}
+
+/* line 327, ../scss/style.scss */
+.bottom-nav {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  text-align: center;
+}
+/* line 332, ../scss/style.scss */
+.bottom-nav hr {
+  width: 80vw;
+  margin: 0 auto;
+  border: none;
+  border-top: 1px solid #9c9c9c;
+}
+
+/* line 340, ../scss/style.scss */
+footer {
+  color: #ffffff;
+}
+
+/* line 346, ../scss/style.scss */
+label {
+  margin: 0 0 0 0;
+  font-size: 30px;
+  display: none;
+}
+
+/* line 351, ../scss/style.scss */
+#toggle {
+  display: none;
+}
+
+/* line 357, ../scss/style.scss */
+.nav-title {
+  display: flex;
+  align-items: center;
+  min-height: 10vh;
+}
+/* line 362, ../scss/style.scss */
+.nav-title .nav-logo {
+  font-size: 3rem;
+  font-weight: 800;
+  text-decoration: none;
+  color: #335cff;
+}
+/* line 368, ../scss/style.scss */
+.nav-title .nav-collapse-toggle {
+  color: #ffffff;
+  font-size: 1.5rem;
+  display: none;
+}
